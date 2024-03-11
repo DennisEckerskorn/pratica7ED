@@ -1,0 +1,43 @@
+@startuml
+
+class App {
+    +main(String[] args): void
+}
+
+class Figura {
+    +calcularArea(): void
+}
+
+class Circle {
+    +calculateArea(): void
+}
+
+class Square {
+    +calculateArea(): void
+}
+
+class Triangle {
+    +calculateArea(): void
+}
+
+class Rectangle {
+    +calculateArea(): void
+}
+
+class Pentagon {
+    +calculateArea(): void
+}
+
+App --> Circle
+App --> Square
+App --> Triangle
+App --> Rectangle
+App --> Pentagon
+
+Circle --> Figura
+Square --> Figura
+Triangle --> Figura
+Rectangle --> Figura
+Pentagon --> Figura
+
+@enduml
